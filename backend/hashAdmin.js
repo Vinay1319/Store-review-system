@@ -15,7 +15,7 @@ const connection = mysql.createConnection({
 
 
 
-const adminPassword = "Qwerty";
+const adminPassword = "admin";
 
 bcrypt.hash(adminPassword, 10, (err, hashedPassword) => {
   if (err) {
@@ -27,7 +27,7 @@ bcrypt.hash(adminPassword, 10, (err, hashedPassword) => {
   const values = [
     "admin",
     "Administrator Account",
-    "admin@example.com",
+    "admin@gmail.com",
     hashedPassword,
     "admin",
     "123 Baker Street, London",
