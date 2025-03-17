@@ -1,0 +1,126 @@
+/* Dashboard Container */
+.dashboard-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: #1a1a2e; /* Dark background for a modern look */
+  border-radius: 16px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Store Header */
+.store-header {
+  background: linear-gradient(135deg, yellow, green);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(255, 61, 0, 0.4);
+}
+
+.store-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Store Stats */
+.store-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #4a148c, #7b1fa2);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 30%;
+  color: white;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffeb3b;
+}
+
+/* Ratings Section */
+.ratings-section {
+  background: #2c2c54;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  margin-top: 2rem;
+}
+
+.ratings-section h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffeb3b;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 1rem;
+  color: white;
+}
+
+th {
+  background: green;
+  text-align: left;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transition: background 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+      padding: 1rem;
+  }
+
+  .store-stats {
+      flex-direction: column;
+      gap: 1rem;
+  }
+
+  .stat-card {
+      width: 100%;
+  }
+
+  table {
+      font-size: 0.9rem;
+  }
+
+  th, td {
+      padding: 0.8rem;
+  }
+}

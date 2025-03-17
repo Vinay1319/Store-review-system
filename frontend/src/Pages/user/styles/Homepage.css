@@ -1,0 +1,123 @@
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/* Search Bar */
+.search-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.search-container input {
+  width: 400px;
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.search-container input:focus {
+  outline: none;
+  border-color: #ff6b35;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+.search-container button {
+  padding: 0.75rem 1.5rem;
+  background-color: #ff6b35;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-container button:hover {
+  background-color: #ff5722;
+  transform: translateY(-2px);
+}
+
+/* Store Cards Grid */
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Store Card */
+.store-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: left;
+  cursor: pointer;
+}
+
+.store-card h3 {
+  color: #2b2d42;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.store-card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.3rem 0;
+}
+
+/* Hover Effect */
+.store-card:hover {
+  transform: translateY(-5px);
+}
+
+/* View Button */
+.view-button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #ff6b35;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.view-button:hover {
+  background-color: #ff5722;
+  transform: translateY(-2px);
+}
+
+/* No Stores Message */
+.no-stores {
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .search-container input {
+      width: 100%;
+  }
+
+  .store-grid {
+      grid-template-columns: 1fr;
+  }
+}
